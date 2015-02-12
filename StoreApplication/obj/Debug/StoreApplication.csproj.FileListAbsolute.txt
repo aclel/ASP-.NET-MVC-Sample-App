@@ -32,3 +32,4 @@ C:\Users\Andrew\Documents\Code\StoreApplication\StoreApplication\bin\System.Web.
 C:\Users\Andrew\Documents\Code\StoreApplication\StoreApplication\bin\System.Web.WebPages.Razor.xml
 C:\Users\Andrew\Documents\Code\StoreApplication\StoreApplication\obj\Debug\StoreApplication.dll
 C:\Users\Andrew\Documents\Code\StoreApplication\StoreApplication\obj\Debug\StoreApplication.pdb
+C:\Users\Andrew\Documents\Code\StoreApplication\StoreApplication\obj\Debug\StoreApplication.csprojResolveAssemblyReference.cache
