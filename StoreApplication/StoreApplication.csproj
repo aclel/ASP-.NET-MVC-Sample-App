@@ -139,6 +139,10 @@
     <Content Include="Models\NHibernate\hibernate.cfg.xml" />
     <Content Include="Models\NHibernate\Product.hbm.xml" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Product\Create.aspx" />
+    <Content Include="Views\Product\Delete.aspx" />
+    <Content Include="Views\Product\Details.aspx" />
+    <Content Include="Views\Product\Edit.aspx" />
     <Content Include="Views\Product\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
