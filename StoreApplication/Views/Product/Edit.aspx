@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<StoreApplication.Models.Product>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Edit
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -11,7 +10,7 @@
     <%: Html.ValidationSummary(true) %>
 
     <fieldset>
-        <legend>Product</legend>
+        <legend>Edit Product</legend>
 
         <%: Html.HiddenFor(model => model.Id) %>
 
@@ -39,9 +38,9 @@
             <%: Html.ValidationMessageFor(model => model.Price) %>
         </div>
 
-        <p>
-            <input type="submit" value="Save" />
-        </p>
+        <div class="form-button">
+            <button type="submit" value="Save" class="btn btn-primary">Save</button>
+        </div>
     </fieldset>
 <% } %>
 

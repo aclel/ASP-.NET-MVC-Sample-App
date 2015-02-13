@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<StoreApplication.Models.Product>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Create
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -11,7 +10,7 @@
     <%: Html.ValidationSummary(true) %>
 
     <fieldset>
-        <legend>Product</legend>
+        <legend>Create Product</legend>
 
         <div class="editor-label">
             <%: Html.LabelFor(model => model.Name) %>
@@ -37,9 +36,11 @@
             <%: Html.ValidationMessageFor(model => model.Price) %>
         </div>
 
-        <p>
-            <input type="submit" value="Create" />
-        </p>
+        <div class="form-button">
+            <button type="submit" value="Create" class="btn btn-primary">Create</button>
+        </div>
+        
+
     </fieldset>
 <% } %>
 
