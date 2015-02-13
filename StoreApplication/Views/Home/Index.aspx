@@ -1,13 +1,2 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" %>
 
-<!DOCTYPE html>
-
-<html>
-<head runat="server">
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <h1>Home</h1>
-</body>
-</html>

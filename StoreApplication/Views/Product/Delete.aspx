@@ -6,8 +6,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<h2>Delete</h2>
-
 <h3>Are you sure you want to delete this?</h3>
 <fieldset>
     <legend>Product</legend>
