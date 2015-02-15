@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NHibernate.SqlAzure</id>
+    <version>2.0.0</version>
+    <authors>Robert Moore,  Matthew Davies</authors>
+    <owners>Robert Moore,  Matthew Davies</owners>
+    <licenseUrl>https://github.com/MRCollective/NHibernate.SqlAzure/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/MRCollective/NHibernate.SqlAzure</projectUrl>
+    <iconUrl>https://raw.github.com/MRCollective/NHibernate.SqlAzure/master/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides an NHibernate driver that uses the Microsoft Transient Fault Handling library to allow for reliable SQL Azure connections.
+      This package has the Microsoft Transient Fault Handling library IL-merged into it; for a version that doesn't see the NHibernate.SqlAzure.Standalone package.</description>
+    <releaseNotes>Please see https://github.com/MRCollective/NHibernate.SqlAzure/releases for release notes and https://github.com/MRCollective/NHibernate.SqlAzure/blob/master/BREAKING_CHANGES.md for any breaking changes.</releaseNotes>
+    <language>en-US</language>
+    <tags>nhibernate azure sql sql transient</tags>
+    <dependencies>
+      <dependency id="NHibernate" version="3.3.3.4000" />
+    </dependencies>
+    <references>
+      <reference file="NHibernate.SqlAzure.dll" />
+    </references>
+  </metadata>
+</package>
