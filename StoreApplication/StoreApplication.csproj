@@ -129,10 +129,12 @@
   <ItemGroup>
     <Content Include="Content\stylesheets\style.css" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MarketController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Market.cs" />
     <Compile Include="Models\NHibernateSession.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -155,6 +157,7 @@
     </Content>
     <Content Include="Global.asax" />
     <Content Include="Models\NHibernate\hibernate.cfg.xml" />
+    <Content Include="Models\NHibernate\Market.hbm.xml" />
     <Content Include="Models\NHibernate\Product.hbm.xml" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
@@ -241,6 +244,7 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Market\Index.aspx" />
     <Content Include="Views\Product\Create.aspx" />
     <Content Include="Views\Product\Delete.aspx" />
     <Content Include="Views\Product\Details.aspx" />

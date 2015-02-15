@@ -20,6 +20,8 @@ namespace StoreApplication.Models
             configuration.Configure(configurationPath);
             var productConfigurationFile = HttpContext.Current.Server.MapPath(@"~\Models\NHibernate\Product.hbm.xml");
             configuration.AddFile(productConfigurationFile);
+            var marketConfigurationFile = HttpContext.Current.Server.MapPath(@"~\Models\NHibernate\Market.hbm.xml");
+            configuration.AddFile(marketConfigurationFile);
             ISessionFactory sessionFactory = configuration.BuildSessionFactory();
             return sessionFactory.OpenSession();
         }

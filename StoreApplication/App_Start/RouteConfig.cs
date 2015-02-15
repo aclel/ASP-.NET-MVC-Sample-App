@@ -26,6 +26,12 @@ namespace StoreApplication
                 defaults: new { controller = "Product", action = "Index", id = UrlParameter.Optional }
             );
 
+            routes.MapRoute(
+                name: "Market",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Market", action = "Index", id = UrlParameter.Optional }
+            );
+
         }
     }
 }
