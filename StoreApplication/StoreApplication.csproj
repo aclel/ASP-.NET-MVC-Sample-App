@@ -244,6 +244,10 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Market\Create.aspx" />
+    <Content Include="Views\Market\Delete.aspx" />
+    <Content Include="Views\Market\Details.aspx" />
+    <Content Include="Views\Market\Edit.aspx" />
     <Content Include="Views\Market\Index.aspx" />
     <Content Include="Views\Product\Create.aspx" />
     <Content Include="Views\Product\Delete.aspx" />

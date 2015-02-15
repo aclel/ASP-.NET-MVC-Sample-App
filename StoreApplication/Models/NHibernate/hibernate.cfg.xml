@@ -8,7 +8,7 @@
       NHibernate.Driver.SqlClientDriver
     </property>
     <property name="connection.connection_string">
-      Server=tcp:eb5chh97qz.database.windows.net,1433;Database=market;User ID=aclel@eb5chh97qz;Password=Csandwich1;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;
+      Server=tcp:eb5chh97qz.database.windows.net,1433;Database=market;User ID=aclel@eb5chh97qz;Password=MarketTest1!;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;
     </property>
     <property name="dialect">
       NHibernate.Dialect.MsSqlAzure2008Dialect

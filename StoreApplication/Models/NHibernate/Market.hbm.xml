@@ -7,5 +7,10 @@
     </id>
     <property name="Name" />
     <property name="Description" />
+
+    <bag name="Products" inverse="false" cascade="all-delete-orphan" lazy="true" access="nosetter.camelcase-underscore" >
+      <key column="MarketID"/>
+      <one-to-many class="Product" />
+    </bag>
   </class>
 </hibernate-mapping>

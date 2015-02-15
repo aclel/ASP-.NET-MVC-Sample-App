@@ -8,5 +8,7 @@
     <property name="Name" />
     <property name="Description" />
     <property name="Price" />
+
+    <many-to-one name="Market" column="MarketID" />
   </class>
 </hibernate-mapping>
