@@ -8,25 +8,22 @@
 <fieldset>
     <legend>Product Details</legend>
 
-    <div class="display-label">
-        <%: Html.DisplayNameFor(model => model.Name) %>
-    </div>
-    <div class="display-field">
-        <%: Html.DisplayFor(model => model.Name) %>
-    </div>
+    <div class="well product-container">
+        <div class="display-field">
+            <h1>
+                <%: Html.DisplayFor(model => model.Name) %>
+            </h1>
+        </div>
 
-    <div class="display-label">
-        <%: Html.DisplayNameFor(model => model.Description) %>
-    </div>
-    <div class="display-field">
-        <%: Html.DisplayFor(model => model.Description) %>
-    </div>
+        <div class="display-field">
+            <%: Html.DisplayFor(model => model.Description) %>
+        </div>
 
-    <div class="display-label">
-        <%: Html.DisplayNameFor(model => model.Price) %>
-    </div>
-    <div class="display-field">
-        <%: Html.DisplayFor(model => model.Price) %>
+        <div class="display-field">
+            <h4>
+                $<%: Html.DisplayFor(model => model.Price) %>
+            </h4>
+        </div>
     </div>
 </fieldset>
 <p>

@@ -5,30 +5,24 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<h2>Delete</h2>
-
-<h3>Are you sure you want to delete this?</h3>
 <fieldset>
-    <legend>Market</legend>
+    <legend>Delete Market</legend>
 
-    <div class="display-label">
-        <%: Html.DisplayNameFor(model => model.Name) %>
-    </div>
     <div class="display-field">
-        <%: Html.DisplayFor(model => model.Name) %>
+        <h1><%: Html.DisplayFor(model => model.Name) %></h1>
     </div>
 
-    <div class="display-label">
-        <%: Html.DisplayNameFor(model => model.Description) %>
-    </div>
     <div class="display-field">
         <%: Html.DisplayFor(model => model.Description) %>
     </div>
 </fieldset>
 <% using (Html.BeginForm()) { %>
     <%: Html.AntiForgeryToken() %>
+    <div class="form-button">
+        <button type="submit" value="Delete" class="btn btn-danger">Delete</button>
+    </div>
     <p>
-        <input type="submit" value="Delete" /> |
+
         <%: Html.ActionLink("Back to List", "Index") %>
     </p>
 <% } %>

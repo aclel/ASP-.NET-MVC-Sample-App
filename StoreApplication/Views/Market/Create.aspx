@@ -1,19 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<StoreApplication.Models.Market>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Create
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
-<h2>Create</h2>
 
 <% using (Html.BeginForm()) { %>
     <%: Html.AntiForgeryToken() %>
     <%: Html.ValidationSummary(true) %>
 
     <fieldset>
-        <legend>Market</legend>
+        <legend>Create Market</legend>
 
         <div class="editor-label">
             <%: Html.LabelFor(model => model.Name) %>
@@ -31,9 +28,9 @@
             <%: Html.ValidationMessageFor(model => model.Description) %>
         </div>
 
-        <p>
-            <input type="submit" value="Create" />
-        </p>
+        <div class="form-button">
+            <button type="submit" value="Create" class="btn btn-primary">Create</button>
+        </div>
     </fieldset>
 <% } %>
 

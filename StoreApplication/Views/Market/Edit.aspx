@@ -5,14 +5,12 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<h2>Edit</h2>
-
 <% using (Html.BeginForm()) { %>
     <%: Html.AntiForgeryToken() %>
     <%: Html.ValidationSummary(true) %>
 
     <fieldset>
-        <legend>Market</legend>
+        <legend>Edit Market</legend>
 
         <%: Html.HiddenFor(model => model.Id) %>
 
@@ -32,9 +30,9 @@
             <%: Html.ValidationMessageFor(model => model.Description) %>
         </div>
 
-        <p>
-            <input type="submit" value="Save" />
-        </p>
+        <div class="form-button">
+            <button type="submit" value="Save" class="btn btn-primary">Save</button>
+        </div>
     </fieldset>
 <% } %>
 

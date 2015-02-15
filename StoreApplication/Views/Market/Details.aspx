@@ -5,24 +5,22 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-<h2>Details</h2>
-
 <fieldset>
-    <legend>Market</legend>
+    <legend>
+        <h1><%: Html.DisplayFor(model => model.Name) %></h1>
+        <div class="display-field">
+            <%: Html.DisplayFor(model => model.Description) %>
+        </div>
+    </legend>
 
-    <div class="display-label">
-        <%: Html.DisplayNameFor(model => model.Name) %>
-    </div>
-    <div class="display-field">
-        <%: Html.DisplayFor(model => model.Name) %>
+    <div class="product-container">
+        <div class="display-field">
+            <h1></h1>
+        </div>
+
+
     </div>
 
-    <div class="display-label">
-        <%: Html.DisplayNameFor(model => model.Description) %>
-    </div>
-    <div class="display-field">
-        <%: Html.DisplayFor(model => model.Description) %>
-    </div>
 </fieldset>
 <p>
 
