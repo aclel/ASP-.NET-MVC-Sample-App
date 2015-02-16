@@ -10,7 +10,9 @@
     <%: Html.ValidationSummary(true) %>
 
     <fieldset>
-        <legend>Create Product</legend>
+        <legend>Edit Product</legend>
+
+        <%: Html.HiddenFor(model => model.Id) %>
 
         <div class="editor-label">
             <%: Html.LabelFor(model => model.Name) %>
@@ -36,12 +38,9 @@
             <%: Html.ValidationMessageFor(model => model.Price) %>
         </div>
 
-
         <div class="form-button">
-            <button type="submit" value="Create" class="btn btn-primary">Create</button>
+            <button type="submit" value="Save" class="btn btn-primary">Save</button>
         </div>
-        
-
     </fieldset>
 <% } %>
 
